@@ -1,0 +1,6 @@
+.vs/
+obj/
+*.user
+*.suo
+*.sln.ide
+*.log
