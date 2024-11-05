@@ -127,5 +127,18 @@ namespace FinTracker.Interfaces
                 return false;
             }
         }
+
+        public static async Task<String> somarResultDeMultiplasQuerrys(String[] querrys)
+        {
+            decimal resultado = 0;
+            foreach (String q in querrys)
+            {
+                String retornoQuery = await (MetodosDB.executarQuerrySimples(q));
+                if (retornoQuery == "" || retornoQuery == null)
+                    continue;
+                resultado += decimal.Parse(retornoQuery);
+            }
+            return resultado.ToString();
+        }
     }
 }

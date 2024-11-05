@@ -55,15 +55,7 @@ namespace FinTracker.Telas
 
         private async Task<String> somarResultDeMultiplasQuerrys(String[] querrys)
         {
-            double resultado=0;
-            foreach (String q in querrys)
-            {
-                String retornoQuery = await (MetodosDB.executarQuerrySimples(q));
-                if (retornoQuery == "" || retornoQuery == null)
-                    continue;
-                resultado += double.Parse(retornoQuery);
-            }
-            return resultado.ToString();
+            return await MetodosDB.somarResultDeMultiplasQuerrys(querrys);
         }
         private void addLabelTip(object componente,String tip)
         {
