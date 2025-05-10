@@ -12,7 +12,7 @@ O objetivo do Fintracker é servir como um sistema para o controle financeiro.
 - [Murilo Fernandes](https://github.com/Murilo-Fernandes)
 - Ruryá Henri 
 - Breno Souza
-- Nicole
+- [Nicole Trujillano](https://github.com/NicoleTrujillano)
 - João Guilherme
 - Leonardo Durval
 - Julia Petra
